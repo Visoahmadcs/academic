@@ -1,0 +1,32 @@
+{
+  "author": {
+    "name": "Sample Author",
+    "affiliations": "Sample Affiliation",
+    "email": "email@example.com",
+    "interests": ["Interest 1", "Interest 2"]
+  },
+  "articles": [
+    {
+      "title": "Sample Article 1",
+      "authors": "Author 1, Author 2",
+      "publication": "Journal 1, 2023",
+      "cited_by": 10,
+      "year": "2023"
+    },
+    {
+      "title": "Sample Article 2",
+      "authors": "Author 3, Author 4",
+      "publication": "Journal 2, 2024",
+      "cited_by": 5,
+      "year": "2024"
+    }
+  ],
+  "cited_by": {
+    "graph": [
+      {"year": 2020, "citations": 5},
+      {"year": 2021, "citations": 10},
+      {"year": 2022, "citations": 15},
+      {"year": 2023, "citations": 20}
+    ]
+  }
+}
