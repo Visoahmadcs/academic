@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  fetch('/api/data')
+  fetch('/data.json')
     .then(response => response.json())
     .then(data => {
       // Display Author Information

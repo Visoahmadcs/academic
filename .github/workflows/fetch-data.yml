@@ -1,0 +1,22 @@
+name: Fetch SerpAPI Data
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs daily at midnight
+
+jobs:
+  fetch-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Fetch data from SerpAPI
+        run: |
+          curl -s "https://serpapi.com/search.json?engine=google_scholar_author&author_id=VRKtYGUAAAAJ&hl=en&api_key=${{ secrets.SERPAPI_API_KEY }}" > data.json
+
+      - name: Commit and push changes
+        uses: stefanzweig/commit-changes-action@v1
+        with:
+          commit-message: 'Update data.json'
+          token: ${{ secrets.GITHUB_TOKEN }}
