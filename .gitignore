@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+# Server file
+server.js
+
+# Environment variables
+.env
+
+# IDE-specific files
+.vscode/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Backup and temporary files
+*.tmp
+*.bak
+
+# Log files
+*.log
+
+# Other generated files
+build/
+dist/

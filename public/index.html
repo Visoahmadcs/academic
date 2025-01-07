@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Author Profile</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Include Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container mt-5">
+
+  <!-- Author Header -->
+  <div class="row">
+    <div class="col-md-4">
+      <img id="author-thumbnail" src="" alt="Profile Picture" class="img-fluid rounded-circle">
+    </div>
+    <div class="col-md-8">
+      <h1 id="author-name"></h1>
+      <p id="author-affiliations"></p>
+      <p id="author-email"></p>
+      <p id="author-interests"></p>
+    </div>
+  </div>
+
+  <!-- Articles Section -->
+  <h2 class="mt-5">Articles</h2>
+  <div id="articles"></div>
+
+  <!-- Citation Graph -->
+  <h2 class="mt-5">Citation Graph</h2>
+  <canvas id="citationChart" width="400" height="200"></canvas>
+
+</div>
+
+<!-- Include Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- Custom Script -->
+<script src="script.js"></script>
+
+</body>
+</html>
