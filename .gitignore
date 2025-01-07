@@ -2,7 +2,7 @@
 node_modules/
 
 # Server file
-server.js
+#server.js
 
 # Environment variables
 .env
